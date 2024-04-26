@@ -1,9 +1,9 @@
 const products = [
     { id: 1, name: "Phone 1", image: "images/1.jpg" ,price: 125 },
-    { id: 2, name: "شاحن وايرلس", image: "images/2.jpg" ,price: 30 },
+    { id: 2, name: "شاحن", image: "images/2.jpg" ,price: 30 },
     { id: 3, name: "Note 20", image: "images/3.jpg" ,price: 30 },
-    { id: 4, name: "حامل موبايل", image: "images/4.jpg" ,price : 70},
-    { id: 5, name: "حقيبة رجالية", image: "images/5.jpg" ,price : 60},
+    { id: 4, name: "حامل", image: "images/4.jpg" ,price : 70},
+    { id: 5, name: "حقيبة", image: "images/5.jpg" ,price : 60},
     { id: 6, name: " ستاند موبايل ", image: "images/6.jpg" ,price : 35},
     { id: 7, name: " سماعة وايرلس", image: "images/7.jpg" ,price : 75}
 
@@ -29,9 +29,6 @@ function createProduct(p){
     const productImg = document.createElement("img")
     productImg.classList.add("ard-img-top")
     productImg.setAttribute('src',p.image);
-    productImg.setAttribute('height',250);
-    productImg.setAttribute('width',200);
-    
     //create card body
     const cardBody = document.createElement("div")
     cardBody.classList.add("card-body","p-4")
